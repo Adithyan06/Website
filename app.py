@@ -26,6 +26,6 @@ def get_movies():
 
     return jsonify(movies)
 
-if name == 'main':
+if __name__ == '__main__':
 
     app.run()
