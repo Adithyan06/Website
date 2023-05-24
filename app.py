@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template
 
 import sqlite3
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route('/')
 
@@ -26,6 +26,6 @@ def get_movies():
 
     return jsonify(movies)
 
-if name == 'main':
+if __name__ == '__main__':
 
     app.run()
