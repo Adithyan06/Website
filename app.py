@@ -4,7 +4,7 @@ import sqlite3
 
 app = Flask(__name__, template_folder='/storage/emulated/0/templates/index.html')
 
-#@app.route('/')
+@app.route('/')
 
 #def index():
 
