@@ -2,13 +2,13 @@ from flask import Flask, jsonify, render_template
 
 import sqlite3
 
-app = Flask(__name__, template_folder='/storage/emulated/0/templates/index.html')
+app = Flask(__name__)
 
 @app.route('/')
 
 def index():
 
-    return render_template('/storage/emulated/0/templates/index.html')
+    return render_template('index.html')
 
 @app.route('/movies')
 
